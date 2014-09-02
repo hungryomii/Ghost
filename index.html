@@ -1,0 +1,21 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="dictionary.js"></script>
+<script src="trie.js"></script>
+<script src="init.js"></script>
+<script src="solver.js"></script>
+
+<table id="table">
+	<tr>
+		<td valign="top" style="width:30%" align="center">
+			<p id="loading"></p>
+			<input id="query" type="hidden">
+			<p id="info"></p>
+
+		</td>
+
+		<td valign="top">
+			Ghost is a word game in which two players take turns saying letters of the alphabet. The first player to complete a word loses. For example: <br>Player 1: "G"<br>Player 2: "H"<br>Player 1: "O"<br>Player 2: "S"<br>Player 1: "T"<br><br> Player 1 finishes the word "ghost" and loses the game. Players <b>must</b> have a word in mind that begins with the letters stated so far. For example: <br>Player 1: "G"<br>Player 2: "X" ---not valid because there is no word that begins with "GX". <br><br>Usually, only words with at least 3 or 4 characters are used. Better explanations of the game can be found <a target="_blank" href="http://en.wikipedia.org/wiki/Ghost_(game)">here</a> and <a target="_blank" href="http://blog.xkcd.com/2007/12/31/ghost/">here</a>. This simple program, given a prefix, outputs whether each letter forces a win or loss under perfect play. The dictionary used is the European Scrabble Word List. 
+		</td>
+	</tr>
+</table>
+
